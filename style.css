@@ -672,3 +672,47 @@ body {
   background: #4B0082;
   color: white;
 }
+
+/* Resources styling */
+.more-text {
+  display: none;
+}
+
+.read-more-btn {
+  color: #D4AF37;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #4B0082, #D4AF37);
+  color: white;
+  overflow: hidden;
+}
+
+/* Astrology wheel background */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: url('astrology-wheel.svg') no-repeat center;
+  background-size: contain;
+  opacity: 0.08;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* Keep text above */
+.hero h1,
+.hero p,
+.hero .btn {
+  position: relative;
+  z-index: 1;
+}
